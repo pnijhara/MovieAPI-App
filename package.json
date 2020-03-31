@@ -1,0 +1,33 @@
+{
+  "name": "movieapi-app",
+  "version": "1.0.0",
+  "description": "Movie API app is the app built with node.js using express and Open Movie Data Base Movie API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnijhara/MovieAPI-App.git"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "node",
+    "nodemon",
+    "body-parser",
+    "locus",
+    "omdb"
+  ],
+  "author": "Prajjwal Nijhara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnijhara/MovieAPI-App/issues"
+  },
+  "homepage": "https://github.com/pnijhara/MovieAPI-App#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
