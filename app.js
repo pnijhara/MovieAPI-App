@@ -6,11 +6,12 @@ const port = 3000
 app.set("view engine", "ejs")
 
 app.get("/", function(req, res){
-    res.send("Welcome to Movie App")
+    res.render("search")
 })
 
 app.get("/results", function(req, res){
-    request("http://www.omdbapi.com/?s=california&apikey=<yourAPIkey>", function(error, response, body){
+    let movie = req.query.movie
+    request(`http://www.omdbapi.com/?s=${movie}&apikey=<yourAPIkey>`, function(error, response, body){
         if(!error && response.statusCode == 200) {
             let parsedData = JSON.parse(body)
             res.render("results", {data: parsedData})
